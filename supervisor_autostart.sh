@@ -240,7 +240,7 @@ start_supervisor() {
 
 	if [ "$?" != "0" ]; then
 		cat >&2 <<-'EOF'
-		启动 Supervisor 失败, Kcptun 无法正常工作!
+		启动 Supervisor 失败!
 		请反馈给脚本作者。
 		EOF
 		exit 1
