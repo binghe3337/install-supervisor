@@ -1,11 +1,11 @@
 # install-supervisor
-Install and configure the supervisor.
-Supervisor安装：
-apt-get install python-pip
-pip install supervisor
-执行：mkdir -p /etc/supervisor/relative/directory
-echo_supervisord_conf > /etc/supervisor/supervisord.conf
-去掉/etc/supervisor/supervisord.conf末尾的[include]和最后一行的注释符号
+Install and configure the supervisor.<br>
+Supervisor安装：<br>
+apt-get install python-pip<br>
+pip install supervisor<br>
+执行：mkdir -p /etc/supervisor/relative/directory<br>
+echo_supervisord_conf > /etc/supervisor/supervisord.conf<br>
+去掉/etc/supervisor/supervisord.conf末尾的[include]和最后一行的注释符号<br>
 转到/etc/supervisor/relative/directory目录，添加配置文件，以.ini结尾。
 配置文件格式：
 [program:sleep]
