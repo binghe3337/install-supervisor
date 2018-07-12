@@ -178,7 +178,7 @@ download_startup_file() {
 		EOF
 
 		supervisor_startup_file='/lib/systemd/system/supervisord.service'
-		supervisor_startup_file_url="https://github.com/kuoruan/shell-scripts/raw/master/kcptun/startup/supervisord.systemd"
+		supervisor_startup_file_url="https://raw.githubusercontent.com/binghe3337/install-supervisor/master/startup/supervisord.systemd"
 
 		download_file "$supervisor_startup_file_url" "$supervisor_startup_file"
 		(
@@ -197,10 +197,10 @@ download_startup_file() {
 
 		case "$lsb_dist" in
 			ubuntu|debian|raspbian)
-				supervisor_startup_file_url="https://github.com/kuoruan/shell-scripts/raw/master/kcptun/startup/supervisord.init.debain"
+				supervisor_startup_file_url="https://raw.githubusercontent.com/binghe3337/install-supervisor/master/startup/supervisord.init.debain"
 				;;
 			fedora|centos|redhat|oraclelinux|photon)
-				supervisor_startup_file_url="https://github.com/kuoruan/shell-scripts/raw/master/kcptun/startup/supervisord.init.redhat"
+				supervisor_startup_file_url="https://raw.githubusercontent.com/binghe3337/install-supervisor/master/startup/supervisord.init.redhat"
 				;;
 			*)
 				echo "没有适合当前系统的服务启动脚本文件。"
