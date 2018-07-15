@@ -42,6 +42,7 @@ checkPip()
 fileInit()
 {
     pip install supervisor
+    supervisorctl --help > /dev/null 2>&1 || { echo 'Error: Supervisor installation failed.';exit 1; }
     mkdir -p /etc/supervisor/relative/directory
     echo_supervisord_conf > /etc/supervisor/supervisord.conf
     echo '[include]' >> /etc/supervisor/supervisord.conf
