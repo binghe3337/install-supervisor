@@ -1,6 +1,9 @@
 # install-supervisor
 Install and configure the supervisor.
 
+一键安装脚本：<br>
+wget https://raw.githubusercontent.com/binghe3337/install-supervisor/master/setup_sv.sh
+
 Supervisor安装：<br>
 apt-get install python-pip<br>
 pip install supervisor<br>
